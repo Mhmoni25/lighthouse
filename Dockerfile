@@ -5,7 +5,7 @@ ARG FEATURES
 ENV FEATURES $FEATURES
 RUN cd lighthouse && make
 
-FROM ubuntu:22.04
+FROM ubuntu:kinetic
 RUN apt-get update && apt-get -y upgrade && apt-get install -y --no-install-recommends \
   libssl-dev \
   ca-certificates \
